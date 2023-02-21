@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> this is  js DOM events</title>
+</head>
+<body>
+    <h1 onclick="console.log('i am clickable')">this is the special events of dom</h1>
+      <button onclick="console.log(705)">click here</button>
+      <button onclick="console.log('my jaan')">keya</button>
+      <br><br>
+      <button onclick="document.body.style.backgroundColor= 'green'">me click</button>
+      <button onclick="makeBreakup()"> make breakup</button>
+      <button>make free</button>
+      <button id="make-pink">make pink</button>
+      <button id="make-blue">make blue</button>
+      <button id="make-orange">make orange</button>
+    <script src="jason/events.js"></script>
+    <script>
+       document.getElementById('make-orange').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'orange';
+       })
+    </script>
+    <script>
+        function makeBreakup(){
+         document.body.style.backgroundColor= 'skyblue'
+        }
+    </script>
+</body>
+</html>
